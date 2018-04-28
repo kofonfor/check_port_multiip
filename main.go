@@ -58,7 +58,7 @@ func main() {
 		fmt.Printf("CRITICAL - some probes (%v/%v) failed\n", len(dead_ips), len(all_ips))
 		os.Exit(3)
 	} else {
-		fmt.Printf("OK - all probes succeeded\n")
+		fmt.Printf("OK - all probes (%v/%v) succeeded\n", len(all_ips), len(all_ips))
 		os.Exit(0)
 	}
 }
